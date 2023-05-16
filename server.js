@@ -7,9 +7,9 @@ const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 
 //Used to check model building:
-// const User = require('./models/User');
-// const Post = require('./models/Post');
-// const Comment = require('./models/Comment');
+const User = require('./models/User');
+const Post = require('./models/Post');
+const Comment = require('./models/Comment');
 
 const sequelize = require('./config/connection'); 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -45,7 +45,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//dont have yet 
+
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
