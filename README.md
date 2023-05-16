@@ -28,10 +28,6 @@
 ## Known Bugs
 All of them, does not work at the moment
 
-## License
-MIT<br>
-Copyright(c) 2022 Qi Chen
-
 ## User Story
 * AS A developer who writes about tech
 * I WANT a CMS-style blog site
